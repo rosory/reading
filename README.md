@@ -6,7 +6,8 @@
 
 ```Mermaid
 graph TD
-    A[NLP] --> B{Is it?};
+    A(Raw data) --> |de-multiplexing| B(FASTQ files);
+    %% style A fill:#63CA01,stroke:#333;
     B -->|Yes| C[OK];
     C --> D[Rethink];
     D --> B;
